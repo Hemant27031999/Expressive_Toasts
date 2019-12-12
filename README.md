@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/badge/License-MIT-red.svg"
       alt="License: MIT" />
   </a>
-	<a href="https://jitpack.io/#Hemant27031999/Expressive_Toasts"><img src="https://img.shields.io/badge/jitpack-0.0.1-yellow" alt="version" /></a>
+	<a href="https://jitpack.io/#Hemant27031999/Expressive_Toasts"><img src="https://img.shields.io/badge/jitpack-0.0.2-yellowgreen" alt="version" /></a>
 </div>
 
 </br>
@@ -45,7 +45,7 @@ Then add the following Dependency to your app gradle file
 ```java
 dependencies {
     ...
-    implementation 'com.github.Hemant27031999:Expressive_Toasts:0.0.1'
+    implementation 'com.github.Hemant27031999:Expressive_Toasts:0.0.2'
 }
 ```
 </br>
