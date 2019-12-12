@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button restricted;
     private Button applause;
     private Button custom;
+    private Button simple;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         restricted = findViewById(R.id.notallowed);
         applause = findViewById(R.id.applause);
         custom = findViewById(R.id.custom);
+        simple = findViewById(R.id.simple);
 
         success.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +71,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 MyToast.customToast(MainActivity.this, "Custom toast to set color and sound.","#A88860", R.raw.notallowed, Toast.LENGTH_SHORT);
+            }
+        });
+
+        simple.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MyToast.simple(MainActivity.this, "Simple toast with tweek sound.", Toast.LENGTH_SHORT);
             }
         });
     }

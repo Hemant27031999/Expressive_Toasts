@@ -58,6 +58,25 @@ public class MyToast {
         sound.start();
     }
 
+    public static void simple(Context context, String message, float duration){
+        li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        mainLayout = li.inflate(R.layout.customtoast,null);
+
+        baselayout = mainLayout.findViewById(R.id.backlay);
+        baselayout.setBackgroundColor(Color.parseColor("#BDBEB9"));
+        toastMessage = mainLayout.findViewById(R.id.custom_toast_message);
+        toastMessage.setText(message);
+        sound = MediaPlayer.create(context, R.raw.twirk);
+
+        final Toast toast = new Toast(context);
+        toast.setDuration((int) duration);
+        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 700);
+        toast.setView(mainLayout);
+
+        toast.show();
+        sound.start();
+    }
+
     public static void warning(Context context, String message, float duration){
         li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         mainLayout = li.inflate(R.layout.customtoast,null);
@@ -123,7 +142,6 @@ public class MyToast {
         baselayout.setBackgroundColor(Color.parseColor(hexColor));
         toastMessage = mainLayout.findViewById(R.id.custom_toast_message);
         toastMessage.setText(message);
-        sound = MediaPlayer.create(context, R.raw.twirk);
 
         final Toast toast = new Toast(context);
         toast.setDuration((int) duration);
@@ -131,7 +149,6 @@ public class MyToast {
         toast.setView(mainLayout);
 
         toast.show();
-        sound.start();
     }
 
     public static void customToast(Context context, String message, String hexColor, @RawRes int resId, float duration){

@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/backlay"
         android:padding="10dp"
-        android:background="#A55680"
+        android:background="#BDBEB9"
         android:orientation="horizontal">
 
         <TextView
