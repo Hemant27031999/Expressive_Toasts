@@ -17,7 +17,7 @@ Expressive toast is a simple android library which helps you add more expressive
 </br>
 
 Success Toast             |  Failure Toast          |  Restricted Toast      |   Warning Toast        
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![](https://github.com/Hemant27031999/Expressive_Toasts/blob/master/gallery/success.jpeg)  |  ![](https://github.com/Hemant27031999/Expressive_Toasts/blob/master/gallery/failure.jpeg) |  ![](https://github.com/Hemant27031999/Expressive_Toasts/blob/master/gallery/restricted.jpeg) |  ![](https://github.com/Hemant27031999/Expressive_Toasts/blob/master/gallery/warned.jpeg)
 
 </br>
